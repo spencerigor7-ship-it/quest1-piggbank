@@ -6,7 +6,7 @@ O **piggbank** está ganhando forma! Nas atividades anteriores, trabalhamos na l
 
 Nesta atividade, o foco não será apenas em entregar a funcionalidade funcionando. Você será introduzido ao conceito de **AI-Driven Code Review** (Revisão de Código Guiada por IA) e **Refatoração Pragmática**. 
 
-Muitas vezes, na pressa de entregar, escrevemos códigos duplicados ou difíceis de manter. Sua missão será implementar a funcionalidade e, em seguida, usar **Engenharia de Prompt** para transformar uma LLM (como ChatGPT, Claude ou Gemini) em um **Arquiteto de Software Sênior**. Esta IA fará uma revisão crítica do seu código e sugerirá refatorações estruturais que você deverá aplicar no projeto.
+Muitas vezes, na pressa de entregar, escrevemos códigos duplicados ou difíceis de manter. Sua missão será implementar a funcionalidade e, em seguida, usar **Engenharia de Prompt** para transformar o **GitHub Copilot Chat no VSCode** em um **Arquiteto de Software Sênior**. Esta IA fará uma revisão crítica do seu código e sugerirá refatorações estruturais que você deverá aplicar no projeto.
 
 ## 💡 A Funcionalidade: Edição e Exclusão de Transações
 
@@ -60,11 +60,11 @@ Implemente a edição e a exclusão da forma mais direta possível.
 
 ### 3. Engenharia de Prompt: O Arquiteto Sênior
 
-Agora, você deve criar um prompt para uma LLM de sua preferência (ChatGPT, Claude, Gemini). O prompt DEVE conter:
+Agora, você deve abrir o painel do **GitHub Copilot Chat no VSCode** (`Cmd+Shift+I` ou `Ctrl+Shift+I`). O seu prompt DEVE ser construído utilizando o contexto correto dos arquivos.
 
-1. **Contexto:** Explique o que é o projeto (React, Next.js, Tailwind).
+1. **Contexto:** Use `@workspace` para que o Copilot entenda o projeto como um todo (React, Next.js, Tailwind).
 2. **Persona:** Diga para a IA agir como um Arquiteto de Software Sênior extremamente rigoroso com Clean Code, SOLID e DRY.
-3. **Instrução:** Peça para ela analisar o código do seu componente de Tabela e o código dos Modais (Nova Transação e Editar Transação) e apontar falhas de arquitetura, duplicação de código e oportunidades de componentização.
+3. **Instrução:** Use `#file` para referenciar especificamente o código do seu componente de Tabela e o código dos Modais (Nova Transação e Editar Transação). Peça para ela analisar e apontar falhas de arquitetura, duplicação de código e oportunidades de componentização.
 4. **Formato de Saída:** Peça um relatório estruturado de Code Review e planos de refatoração passo a passo.
 
 *Guarde esse prompt e a resposta da IA, eles farão parte da sua entrega!*
